@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Title of the document</title>
+		<title>Test !</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		
+		<!-- Common mata tag ! -->
+		<meta name="description" content="Description here !" />
+		<meta name="theme-color" content="#2B2D31" />
+		
+		<!-- OG meta tag ! -->
+		<meta property="og:title" content="Title here !" />
+		<meta property="og:description" content="Description here !" />
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://grinderpun.github.io/web-test/" />
+		
+		<meta property="og:image" content="https://grinderpun.github.io/web-test/test-image.jpg" />
+		<meta property="og:image:secure_url" content="https://grinderpun.github.io/web-test/test-image.jpg" />
+		<meta property="og:image:alt" content="Test !" />
+		<meta property="og:image:type" content="image/jpg" />
+		
+		<!-- Twitter meta tag -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@GrinderPun" />
+		<meta name="twitter:title" content="Title here !" />
+		<meta name="twitter:description" content="Description here !" />
+		<meta name="twitter:image" content="https://grinderpun.com/graphic/icon.png" />
+		
+		<meta name="thumbnail" content="https://grinderpun.github.io/web-test/test-image.jpg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<style>
+			@font-face {
+				font-family: DOS_VGA;
+				src: url(Web437_IBM_MDA.woff);
+			}
+		
+			html {
+				height: 100%;
+				image-rendering: pixelated;
+				font-family: DOS_VGA;
+			}
+		
+			body {
+				margin: 0px;
+				height: 100%;
+				color: rgb(69, 88, 9);
+				font-size: 30px;
+				background-color: white;
+			}
+		
+			#demo {
+				display: flex;
+				flex-direction: column;
+				width: 500px;
+				max-width: 500px;
+				height: auto;
+				position: relative;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				top: 50%;
+				text-align: center;
+			}
+			
+			img {
+				width: 200px;
+				max-width: 200px;
+				position: relative;
+				transform: translateX(-50%);
+				left: 50%;
+			}
+		</style>
 	</head>
 	
 	<body>
-		<h1>This is a heading</h1>
-		<p>This is a paragraph.</p>
+		<div id="demo">
+			<img src="test-image.jpg">
+			<p>This is just a test !<br>hehe..</p>
+		</div>
 	</body>
 </html>
